@@ -1,0 +1,28 @@
+.ListLayout {
+
+  &__content {
+    font-size: var(--body-copy-size);
+  }
+
+  &__list {
+    margin-top: 4rem;
+    list-style: none outside none;
+    font-size: var(--body-copy-size);
+    letter-spacing: var(--letter-spacing-tight);
+    max-width: var(--measure);
+  }
+
+  &__item {
+    margin-bottom: .5rem;
+  }
+
+  &__footer {
+    margin-top: 2rem;
+
+    @media (min-width: 60rem) {
+      margin-top: 4rem;
+    }
+  }
+
+  &__footer-link {}
+}

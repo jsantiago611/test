@@ -1,0 +1,65 @@
+.PageHeader {
+  margin-bottom: 5rem;
+
+  &__heading {
+    line-height: var(--line-height-tight);
+    font-size: var(--title-font-size);
+    font-weight: var(--font-weight-bold);
+    display: inline-block;
+  }
+
+  &__label {
+    display: inline-block;
+    font-size: var(--font-size-small);
+    padding: .5rem;
+    background-color: var(--black);
+    color: var(--white);
+    text-transform: uppercase;
+    border-radius: var(--border-radius);
+    vertical-align: top;
+  }
+
+  &__series {
+    font-size: var(--font-size-large);
+    text-transform: uppercase;
+    letter-spacing: var(--letter-spacing-wider);
+    color: var(--gray-900);
+    margin-top: 1rem;
+    margin-bottom: .5rem;
+
+    a {
+      color: var(--link-color);
+      text-decoration: underline;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+
+  &__ieml {
+    font-size: 1rem;
+    margin-top: .75rem;
+
+    a {
+      color: var(--link-color);
+      text-decoration: underline;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+
+  &__taxonomy {
+    font-size: 1rem;
+    margin-top: 1.5rem;
+    color: var(--gray-900);
+
+    a {
+      color: var(--link-color);
+      text-decoration: underline;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}

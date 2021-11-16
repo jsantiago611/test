@@ -1,0 +1,54 @@
+.Summary {
+  padding: .5rem 0;
+  border-bottom: var(--border-width) solid currentColor;
+  &:hover {
+    color: var(--link-color);
+  }
+
+  &__link {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  &__inner {
+
+    @media (min-width: 48rem) {
+      display: grid;
+      gap: .5rem;
+      grid-template-rows: 1fr;
+      grid-template-columns: 4em auto;
+    }
+  }
+
+  &__number {
+    font-size: .875rem;
+    align-items: end;
+
+    @media (min-width: 48rem) {
+      font-size: inherit;
+    }
+  }
+
+  &__title {
+    @media (min-width: 48rem) {
+    }
+
+    @media (min-width: 60rem) {
+    }
+  }
+
+  &__label {
+    display: inline-block;
+    font-size: var(--font-size-small);
+    vertical-align: middle;
+    padding: .5rem;
+    background-color: var(--black);
+    color: var(--white);
+    text-transform: uppercase;
+    border-radius: var(--border-radius);
+
+    @media (min-width: 60rem) {
+      font-size: var(--font-size-large);
+    }
+  }
+}

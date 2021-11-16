@@ -1,0 +1,96 @@
+:root {
+  /* Layouts */
+  --measure: 33em;
+  --container-width: 80rem;
+  --container-gutter: 1.5rem;
+  @media (min-width: 60rem) {
+    --container-gutter: 2.25rem;
+  }
+  @media (min-width: 80rem) {
+    --container-gutter: 3rem;
+  }
+
+  /* Screen sizes */
+  --screen-xs: 36rem;  /* 576px */
+  --screen-sm: 48rem; /* 768px */
+  --screen-md: 60rem; /* 960px */
+  --screen-lg: 80rem; /* 1280px */
+  --screen-xl: 100rem; /* 1600px */
+
+  /* Colors */
+  --green: #37542F;
+  --lime: #6edd37;
+  --gray-100: #E0E6DD;
+  --gray-500: #8C9986;
+  --gray-900: #353C31;
+  --black: #000000;
+  --white: #ffffff;
+
+  --text-color-base: var(--black);
+  --background-color-base: var(--gray-100);
+  --link-color: var(--green);
+
+  @media (prefers-color-scheme: dark) {
+    --text-color-base: var(--white);
+    --background-color-base: #0b0b0b;
+
+    --green: #70af38;
+    --gray-100: #3f3f3f;
+    --gray-500: #545653;
+    --gray-900: #c6c6c6;
+    --lime: #2a4c20;
+  }
+
+  /* Font size */
+  --font-size-small: .875rem;
+  --font-size-medium: 1.125rem;
+  --font-size-large: 1.25rem;
+  --font-size-xl: 1.75rem;
+  --font-size-4xl: 2.5rem;
+  --font-size-5xl: 3.3rem;
+  --font-size-6xl: 4.5rem;
+
+  --body-copy-size: 1.35rem;
+  --title-font-size: 2.85rem;
+  @media (min-width: 48rem) {
+    --body-copy-size: 1.76rem;
+    --title-font-size: var(--font-size-5xl);
+  }
+  @media (min-width: 60rem) {
+    --body-copy-size: 2.08rem;
+    --title-font-size: var(--font-size-6xl);
+  }
+
+  --font-weight-base: 400;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  /* Line height */
+  --line-height-none: 1;
+  --line-height-tight: .875;
+  --line-height-base: 1.12; /* Tight */
+  --line-height-snug: 1.375;
+
+
+  /* Font family */
+  --font-family-serif: 'Georgia', serif;
+  --font-family-mono: 'SFMono-Regular', 'Menlo', monospace;
+  --font-family-sans: 'soehne-web', 'Univers', 'Helvetica', '-apple-system', 'BlinkMacSystemFont', sans-serif;
+
+  --font-family-base: var(--font-family-sans);
+
+  /* Letter spacing */
+  --letter-spacing-tight: -.015em;
+  --letter-spacing-wider: .05em;
+
+  /* Border-radius */
+  --border-radius: .25rem;
+
+  /* Border */
+  --border-width: 2px;
+  --border-width-thick: 4px;
+  @media (min-width: 60rem) {
+    --border-width: 3px;
+    --border-width-thick: 5px;
+  }
+}
